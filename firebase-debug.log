@@ -1,0 +1,57 @@
+[debug] [2025-01-13T17:29:07.859Z] ----------------------------------------------------------------------
+[debug] [2025-01-13T17:29:07.863Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Alex\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-01-13T17:29:07.864Z] CLI Version:   13.29.1
+[debug] [2025-01-13T17:29:07.864Z] Platform:      win32
+[debug] [2025-01-13T17:29:07.864Z] Node Version:  v22.12.0
+[debug] [2025-01-13T17:29:07.865Z] Time:          Mon Jan 13 2025 12:29:07 GMT-0500 (hora de Ecuador)
+[debug] [2025-01-13T17:29:07.865Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-13T17:29:07.876Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-13T17:29:07.877Z] > authorizing via signed-in user (vallejoalexiis@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Alex\Desktop\proyecto-in\ProyectoInnovacion
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-01-13T17:29:29.339Z] Checked if tokens are valid: true, expires at: 1736792525370
+[debug] [2025-01-13T17:29:29.339Z] Checked if tokens are valid: true, expires at: 1736792525370
+[debug] [2025-01-13T17:29:29.342Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-01-13T17:29:30.026Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-01-13T17:29:30.026Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project proyecto-in-4bb6f (Proyecto-in) 
+[info] 
+=== Hosting Setup
+[debug] [2025-01-13T17:29:33.895Z] Checked if tokens are valid: true, expires at: 1736792525370
+[debug] [2025-01-13T17:29:33.895Z] Checked if tokens are valid: true, expires at: 1736792525370
+[debug] [2025-01-13T17:29:33.895Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-in-4bb6f [none]
+[debug] [2025-01-13T17:29:34.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-in-4bb6f 200
+[debug] [2025-01-13T17:29:34.258Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-in-4bb6f {"projectId":"proyecto-in-4bb6f","projectNumber":"1072792127850","displayName":"Proyecto-in","name":"projects/proyecto-in-4bb6f","resources":{"hostingSite":"proyecto-in-4bb6f"},"state":"ACTIVE","etag":"1_43496f2f-8015-469d-ac4c-0fba19d1d707"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-01-13T17:30:06.576Z] Error: Path contains invalid characters: C:\Users\Alex\Desktop\proyecto-in\ProyectoInnovacion\"\"
+    at checkPath (C:\Users\Alex\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\utils.js:16:21)
+    at module.exports.makeDirSync (C:\Users\Alex\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\make-dir.js:21:3)
+    at Object.createFileSync (C:\Users\Alex\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:59:45)
+    at Config.writeProjectFile (C:\Users\Alex\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:159:12)
+    at C:\Users\Alex\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:193:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async doSetup (C:\Users\Alex\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:173:13)
+    at async init (C:\Users\Alex\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:41:9)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,0 +1,80 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #fbfcfc ;
+}
+
+.page-header {
+    background-color: #5dade2 ;
+    color: white;
+}
+
+.navbar {
+    background-color: #5dade2 ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: rgb(253, 235, 208);
+}
+
+
+blockquote {
+    font-style: italic;
+    padding: 20px;
+    background: #f8f9fa;
+    border-inline-start: 4px solid #007bff;
+}
+
+.img-fluid {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#map {
+    inline-size: 100%;
+    block-size: 300px;
+}
+
+.carousel-image {
+    max-width: 80%; /* Ajusta el ancho de la imagen */
+    max-height: 400px; /* Ajusta la altura */
+    object-fit: cover; /* Mantiene proporciones */
+    margin: 0 auto; /* Centra la imagen */
+    border-radius: 10px; /* Opcional: redondea los bordes */
+}
+
+.custom-carousel-control {
+    width: 5%; /* Ajusta el ancho de los controles para separarlos de la imagen */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Asegura que estén visibles */
+
+}
+/* Botones */
+.container .btn {
+    background-color: #5dade2; /* Azul claro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Animación de transición */
+}
+
+/* Efecto hover */
+.container .btn:hover {
+    background-color: #2e86c1; /* Azul más oscuro */
+    color: #f4f4f4; /* Texto más claro */
+    transform: translateY(-5px); /* Levanta el botón ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+}
