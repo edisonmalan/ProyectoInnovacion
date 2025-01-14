@@ -78,3 +78,7 @@ blockquote {
     transform: translateY(-5px); /* Levanta el botón ligeramente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
 }
+
+.imagennee2{
+    border-radius: 20px
+}
