@@ -83,3 +83,50 @@ blockquote {
     border-radius: 20px
 }
 
+
+.video-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .video-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .video-item.left {
+    flex-direction: row;
+  }
+  
+  .video-item.right {
+    flex-direction: row-reverse;
+  }
+  
+   video {
+    width: 150%;
+    max-width: 500px;
+    width: 200;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+  }
+  
+  .text {
+    width: 40%;
+    max-width: 400px;
+  }
+  
+  .text h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .text p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+  }
