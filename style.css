@@ -130,3 +130,12 @@ blockquote {
     color: #666;
     line-height: 1.5;
   }
+
+  /*Estilo personalizado para imagenes*/
+.img-uniform {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantén las proporciones */
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+    border-radius: 8px; /* Opcional: esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}
