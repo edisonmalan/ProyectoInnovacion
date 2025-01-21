@@ -83,27 +83,7 @@ blockquote {
     border-radius: 20px
 }
 
-
-.video-container {
-    width: 80%;
-    margin: 20px auto;
-  }
-  
-  .video-item {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .video-item.left {
-    flex-direction: row;
-  }
-  
-  .video-item.right {
-    flex-direction: row-reverse;
-  }
-  
-   video {
+     video {
     width: 150%;
     max-width: 500px;
     width: 200;
@@ -139,3 +119,40 @@ blockquote {
     border-radius: 8px; /* Opcional: esquinas redondeadas */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
 }
+@media (max-width: 768px) {
+    .video-item {
+        flex-direction: column; /* Cambia el diseño en pantallas pequeñas */
+    }
+
+    .video-item .left,
+    .video-item .right,
+    .video-item .text {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+}
+.video-container {
+    width: 80%;
+    margin: 20px auto;
+    gap: 2rem;
+  }
+  
+  .video-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espaciado entre video y texto */
+    margin-bottom: 2rem; 
+  }
+  
+  .video-item.left {
+    flex-direction: row;
+    flex: 1 1 300px; /* Ancho mínimo de los videos */
+    max-width: 50%;
+  }
+  
+  .video-item.right {
+    flex-direction: row-reverse;
+    flex: 1 1 300px; /* Ancho mínimo de los videos */
+    max-width: 50%;
+  }
